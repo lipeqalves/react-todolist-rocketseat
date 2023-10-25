@@ -1,0 +1,65 @@
+.task {
+  width: 45rem;
+  height: 4.5rem;
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+  border-radius: 8px;
+  align-items: center;
+  padding: 1rem;
+}
+.task + .task {
+  margin-top: 0.5rem;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.content label {
+  width: 39.5rem;
+  text-align: left;
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+.lineTask {
+  text-decoration: line-through;
+}
+.content input[type="radio"] {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  background: transparent;
+
+  border: 1px solid var(--blue);
+  cursor: pointer;
+}
+.content input[type="radio"]:hover {
+  border: 1px solid var(--blue-dark);
+}
+.content input[type="radio"]:checked {
+  background-image: url("../assets/check.svg");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  background-color: var(--purple-dark);
+}
+.content input[type="radio"]:checked:hover {
+  background-color: var(--purple);
+}
+
+.content button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  border-radius: 2px;
+}
+.content button:hover {
+  color: var(--danger);
+}

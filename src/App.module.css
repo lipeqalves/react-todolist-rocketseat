@@ -1,0 +1,62 @@
+.app {
+  max-width: 96rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+@media (max-width: 760px) {
+  html {
+    font-size: 87.5%;
+  }
+  .app {
+    width: 46rem;
+    margin: 0 auto;
+  }
+}
+.todoForm {
+  width: 45rem;
+  height: 3.575rem;
+  display: flex;
+  gap: 0.575rem;
+  margin: -2rem auto;
+  flex: 1;
+}
+
+.todoForm input {
+  background-color: var(--gray-500);
+  width: 39.875rem;
+  height: 3.375rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  color: var(--gray-400);
+  font-size: 0.875rem;
+  flex: 1;
+}
+
+.todoForm input:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--purple-dark);
+  color: var(--gray-100);
+  font-size: 1rem;
+}
+
+.todoForm button[type="submit"] {
+  height: 3.375rem;
+  width: 5.625rem;
+  border-radius: 8px;
+  background-color: var(--blue-dark);
+  border: none;
+  color: var(--gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  cursor: pointer;
+}
+.todoForm button[type="submit"]:hover {
+  background-color: var(--blue);
+}

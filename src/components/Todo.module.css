@@ -1,0 +1,57 @@
+.conteiner {
+  width: 45rem;
+  margin: 5.4375rem auto;
+}
+
+.tudoHeader {
+  width: 45rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 1rem;
+}
+.tudoHeader div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.text {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.taskCriadas, .taskConcluidas {
+  width: 1.5rem;
+  height: 1.1875rem;
+
+  background-color: var(--gray-500);
+  color: var(--gray-200);
+  border-radius: 100%;
+  font-size: 0.75rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.taskConcluidas{
+  width: 3.25rem;
+  height: 1.5875rem;
+}
+
+
+.content {
+  width: 46rem;
+  border-top: 1px solid var(--gray-300);
+  padding-top: 2rem;
+}
+.notTesks {
+  text-align: center;
+  padding: 1rem;
+}
+.notTesks p {
+  font-size: 1rem;
+  font-weight: normal;
+}
